@@ -80,7 +80,7 @@ by using the following around your code:
 
 .. code-block:: python
 
-    with dask.config.set("array.chunk-size": "32MiB"):
+    with dask.config.set({"array.chunk-size": "32MiB"}):
       # your code here
 
 For more information about chunk sizes in Satpy, please refer to the
